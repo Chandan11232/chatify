@@ -1,0 +1,138 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #222, #111);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main {
+    background: linear-gradient(to bottom right, #333, #222);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    width: 500px;
+    /* Increase the width */
+    margin: 20px;
+    /* Add margin for a more spacious look */
+}
+
+form {
+    margin: 15px 0;
+}
+
+input,
+button {
+    padding: 15px;
+    /* Increase the padding */
+    margin: 10px;
+    /* Increase the margin */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(to bottom right, #006a8c, #008CBA);
+    box-shadow: 0 0 20px rgba(12, 97, 125, 0.8);
+    color: #fff;
+}
+
+#join {
+    background: linear-gradient(to bottom right, #4CAF50, #45a049);
+    color: #fff;
+    cursor: pointer;
+}
+
+.user-list,
+.room-list,
+.activity {
+    margin: 15px 0;
+    padding: 15px;
+    background: linear-gradient(to bottom right, #444, #333);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    list-style: none;
+}
+
+ul {
+    padding: 0;
+}
+
+.form-msg {
+    display: flex;
+}
+
+#message {
+    flex: 1;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+button[type="submit"] {
+    background: linear-gradient(to bottom right, #008CBA, #006a8c);
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Styles for chat messages */
+.chat-display {
+    list-style: none;
+    margin: 0;
+    padding: 15px;
+    /* Increase the padding */
+    overflow-y: auto;
+    max-height: 400px;
+    /* Increase the max-height */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.post {
+    margin-bottom: 15px;
+    /* Increase the margin */
+}
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    /* Increase the font size */
+    color: #888;
+}
+
+.post__header--name {
+    font-weight: bold;
+}
+
+.post__header--time {
+    margin-left: 10px;
+}
+
+.post__text {
+    padding: 15px;
+    /* Increase the padding */
+    border-radius: 10px;
+    
+}
+
+.post--left .post__text {
+    background-color: lightblue;
+    /* Light blue for user's messages */
+    text-align: right;
+    /* Align to the left */
+    margin-left: 330px;
+}
+
+.post--right .post__text {
+    background-color: green;
+    /* Light green for others' messages */
+    text-align: left;
+    /* Align to the right */
+    margin-right: 330px;
+}
